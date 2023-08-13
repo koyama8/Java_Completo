@@ -1,0 +1,30 @@
+package seção05;
+
+public class Cachorro {
+    
+	
+	public String anda;
+	public String fala;
+	public String come;
+	public String dorme;
+	
+	
+	
+	public void anda() {
+		System.out.println(" Esta andando !");
+	}
+	
+	public void fala() {
+		System.out.println(" Auau !");
+	}
+	
+	public void come() {
+		System.out.println(" Esta comendo ração");
+	}
+	
+	public void dorme() {
+		System.out.println(" zzzzz ");
+	}
+	
+	
+}

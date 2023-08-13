@@ -1,0 +1,11 @@
+package orientacao_objetos;
+
+public interface Esportivo {
+  
+	//Define apenas os metodos 
+	
+	void ligarTudo();
+	void desligarTurbo();
+	
+	
+}

@@ -1,0 +1,8 @@
+package orientacao_objetos;
+
+public class Carro {
+
+	
+	public int velocidadeMaxima;
+	public int delta;
+}

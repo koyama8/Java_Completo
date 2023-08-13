@@ -1,0 +1,17 @@
+package seção06;
+
+import java.util.Scanner;
+
+public class Exercício03 {
+  public static void main(String[] args) {
+    
+	  Scanner sc = new Scanner(System.in);
+	  
+	  //Equals
+	 String nome = sc.nextLine();
+	 String nome1 = sc.nextLine();
+	 
+	 System.out.println(nome.contentEquals(nome1));
+	  
+ }
+}

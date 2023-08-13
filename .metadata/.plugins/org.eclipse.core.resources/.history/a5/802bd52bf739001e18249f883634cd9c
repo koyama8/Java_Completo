@@ -1,0 +1,33 @@
+package orientacao_objetos;
+/*
+ Classe ContaPoupança:
+ atributo int dia de rendimento
+ método calcularNovoSaldo,
+ recebe a taxa de rendimento da poupança e atualiza o saldo
+ */
+ public class ContaPoupanca extends ContaBancaria {
+    
+	int dia_rendimento;
+	
+	 public ContaPoupanca(String cliente, int num_conta, float saldo, float valor, int dia_rendimento) {
+			
+		 super(cliente, num_conta, saldo, valor);
+		 this.dia_rendimento = dia_rendimento;
+		}
+
+	 public void calcularNovoSaldo(float saldo, int dia_redimento) {
+		 
+		 saldo+=0.5 * dia_rendimento;
+		 System.out.println("Saldo Atual = "+saldo);
+	 }
+
+	@Override
+	public String toString() {
+		return super.toString() + "\n ContaPoupanca dia_rendimento=" + dia_rendimento + "]";
+	}
+
+	
+	
+	 
+	 
+}

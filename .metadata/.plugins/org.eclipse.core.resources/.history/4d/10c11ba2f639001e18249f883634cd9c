@@ -1,0 +1,36 @@
+package seção03;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+  public static void main(String[] args) {
+	
+	  Scanner entrada = new Scanner(System.in);
+	  
+	  int numero;
+	  System.out.print("Digite um valor:");
+	  numero = entrada.nextInt();
+	  System.out.print("Numero = " + numero);
+	  
+	  System.out.println();
+	  
+	  //Conversão em String
+	  String resultado = Integer.toString(numero);
+	  resultado = "Conversão para String";
+	  System.out.println(resultado);
+	  
+	  System.out.println();
+	  
+	  //Conversão double para int
+	  double d_val;
+	  System.out.print("Digite um valor:");
+	  d_val = entrada.nextDouble();
+	  System.out.println("Valor em double: " + d_val);
+	  
+	  int i_dval = (int) d_val;
+	  System.out.println("Valor em inteiro: " + i_dval);
+	  
+	  
+
+ }
+}

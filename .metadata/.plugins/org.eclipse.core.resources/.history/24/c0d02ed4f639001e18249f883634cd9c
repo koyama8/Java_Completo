@@ -1,0 +1,29 @@
+package seção04;
+
+import java.util.Scanner;
+
+/**
+ * @author Matheus
+ Ler um número inteiro n. Escrever a soma de
+ todos os números pares de 2 até n.
+ */
+public class Exercicio07 {
+  public static void main(String[] args) {
+    
+	  Scanner sc = new Scanner(System.in);
+	
+	  
+	  
+	  for(int i=1; i<=10;i++) {
+		  
+		  
+		  if(i % 2 == 0) {
+			  int soma=i;
+			  soma +=i;
+			  
+			  System.out.println(soma);
+		  }
+	  }
+	  
+ }
+}

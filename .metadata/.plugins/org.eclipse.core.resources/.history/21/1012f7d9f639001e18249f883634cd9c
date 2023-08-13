@@ -1,0 +1,23 @@
+package estrutura_controle;
+
+import java.util.Scanner;
+
+//Fatorial
+public class Exercicio03 {
+  public static void main(String[] args) {
+   
+	  Scanner sc = new Scanner(System.in);
+	  
+	  int fatorial;
+	  int resultado = 1;
+	  
+	  System.out.print("Informe um numero: ");
+      fatorial = sc.nextInt();
+      
+      for(int i = fatorial;i>1; i--) {
+    	  
+    	  resultado *= i;
+    	  System.out.print(resultado +",");
+      }
+  }
+}

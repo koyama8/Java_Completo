@@ -1,0 +1,51 @@
+package seção07;
+
+public class Futebol implements comparavel{
+
+	String nome;
+	String time;
+	
+	
+	public Futebol(String nome, String time) {
+	
+		this.nome = nome;
+		this.time = time;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	
+	
+	@Override
+	public int comparar(Object o) {
+		
+		int comparacao = 0;
+		if(o instanceof Futebol) {
+			
+			Futebol futebol = (Futebol) o;
+			comparacao = this.getNome().compareTo(futebol.getNome());
+		
+		 //Verifica se o time são iguais
+		 if(comparacao == 0) {
+			
+			 comparacao = this.getTime().compareTo(futebol.getTime());
+		 }
+		}
+		
+		
+		return comparacao;
+	}
+	
+	
+	
+}

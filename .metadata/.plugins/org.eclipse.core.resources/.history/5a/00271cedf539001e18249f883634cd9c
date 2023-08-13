@@ -1,0 +1,15 @@
+package projeto;
+
+import java.util.Scanner;
+
+public class main {
+  public static void main(String[] args) {
+	
+	  Scanner sc = new Scanner(System.in);
+	  String senha = sc.nextLine();
+	  
+	  
+	  Plano plano = new Plano();
+	  plano.validaPlano(senha);
+ }
+}

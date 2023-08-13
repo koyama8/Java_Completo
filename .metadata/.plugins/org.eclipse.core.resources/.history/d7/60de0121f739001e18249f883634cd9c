@@ -1,0 +1,50 @@
+package seção07;
+
+public class Gerente extends Funcionario{
+
+
+	private int senha;
+	private int numeroFuncionarios;
+	
+	
+	public Gerente(String nome, String cpf, double salario, int senha, int numeroFuncionarios) {
+		super(nome, cpf, salario);
+		this.senha = senha;
+		this.numeroFuncionarios = numeroFuncionarios;
+		
+	}
+	
+	public boolean validaSenha(int senha) {
+		
+		if(this.senha == senha) {
+			
+			System.out.println("Acesso permitido");
+			return true;
+		}else {
+			System.out.println("Acesso negado");
+			return false;
+		}
+	}
+
+	public int getSenha() {
+		return senha;
+	}
+
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+	public int getNumeroFuncionarios() {
+		return numeroFuncionarios;
+	}
+
+	public void setNumeroFuncionarios(int numeroFuncionarios) {
+		this.numeroFuncionarios = numeroFuncionarios;
+	}
+	
+	public String toString(){  
+	     return super.toString() + '\n'
+	    		 +"senha:" +senha;  
+	} 
+	
+}

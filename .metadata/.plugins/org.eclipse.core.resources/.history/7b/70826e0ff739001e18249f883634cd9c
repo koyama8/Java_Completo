@@ -1,0 +1,35 @@
+package seção06;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Exercício04 {
+ /**
+  List   
+
+ */
+  
+ public static void main(String[] args) {
+	
+	 //Adicionando elementos em um Java list!
+	 List<String> carro = new ArrayList<String>();
+     carro.add("Camaro");
+     carro.add("Fusca");
+     carro.add("Gol");
+     System.out.println(carro);
+     
+     //Tamanho da lista
+     System.out.println("Tamanho da Lista" + carro.size());
+     
+     
+     //Encontrar elementos em uma lista
+     System.out.println(carro.contains("Camaro"));
+     
+     //Remove elementos da Lista
+     carro.remove("Gol");
+     System.out.println(carro);
+     
+     
+     
+ }
+}

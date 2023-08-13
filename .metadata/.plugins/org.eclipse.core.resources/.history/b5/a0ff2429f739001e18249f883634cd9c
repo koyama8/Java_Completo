@@ -1,0 +1,8 @@
+package orientacao_objetos;
+
+public interface Conta {
+  
+	void sacar(double valor);
+	void depositar(double valor);
+
+}

@@ -1,0 +1,8 @@
+package seção07;
+
+public class Carro {
+
+	
+	public int velocidadeMaxima;
+	public int delta;
+}

@@ -1,0 +1,50 @@
+package seção07;
+/*
+  Elabore uma classe ContaBancaria, com os seguintes membros:
+ 
+  atributo String cliente
+  atributo int num_conta
+  atributo float saldo
+  
+  método sacar (o saldo não pode ficar negativo)
+  método depositar 
+ */
+public class ContaBancaria {
+    
+	String cliente;
+	int num_conta;
+	float saldo;
+	float valor;
+	
+	
+	public ContaBancaria(String cliente, int num_conta, float saldo, float valor){
+	   
+		this.cliente = cliente;
+		this.num_conta = num_conta;
+		this.saldo = saldo;
+		this.valor = valor;
+	}
+	
+	
+	public void sacar(float saldo) {
+		
+		if(saldo < 0) {
+			System.out.println("Saldo negativo");
+		}else {
+			valor-=saldo;
+		}
+	}
+	
+	public void depositar(float saldo) {
+		
+		saldo+=valor;
+		System.out.println("Valor = " + saldo);
+	}
+	
+	
+	public String toString() {
+    
+	return "[Nome do Cliente:"+cliente+", Numero da conta:"+num_conta+", Saldo:"+saldo+", Valor retirado:" + valor;
+	}
+	
+}

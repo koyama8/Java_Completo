@@ -1,0 +1,11 @@
+package seção07;
+
+public interface Esportivo {
+  
+	//Define apenas os metodos 
+	
+	void ligarTudo();
+	void desligarTurbo();
+	
+	
+}

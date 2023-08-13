@@ -1,0 +1,24 @@
+package seção05;
+
+import java.util.Scanner;
+
+public class Exercício03 {
+ public static void main(String[] args) {
+    
+	 Scanner sc = new Scanner(System.in);
+	 
+	 System.out.print("Informe a marca da caneta:");
+	 String marca = sc.next();
+	 
+	 System.out.print("Informe a cor da caneta: ");
+	 String cor = sc.next();
+	 
+	 System.out.print("Informe o tamanho: ");
+	 int tamanho = sc.nextInt();
+	 
+	 Caneta caneta = new Caneta(marca,cor,tamanho);
+	 System.out.println(caneta);
+	 caneta.caneta();
+	 
+ }
+}

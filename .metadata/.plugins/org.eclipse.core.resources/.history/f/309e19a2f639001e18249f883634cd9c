@@ -1,0 +1,28 @@
+package seção03;
+
+import java.util.Scanner;
+
+/*************************************************************************
+ *   1) Faça um programa que:
+ *    - Leia a cotação do dólar
+ *    - Converta esse valor para Real
+ *    - Mostre o resultado
+ *
+ *************************************************************************/
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+	    Scanner entrada = new Scanner(System.in);
+		
+	    double dolar,real;
+	    
+	    System.out.println("Digite a cotação em dolar:");
+	    dolar = entrada.nextDouble();
+	    
+	    System.out.println("Digite o valor em real:");
+	    real = entrada.nextDouble();
+	    
+	    System.out.println("O valor em reais: " + dolar * real + "\n");
+	}
+}

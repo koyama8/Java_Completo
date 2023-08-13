@@ -1,0 +1,8 @@
+package seção07;
+
+public interface Banco {
+
+	void depositar(double saldo,double salario);
+	void sacar(double saldo,double salario);
+	void saldo(double saldo);
+}

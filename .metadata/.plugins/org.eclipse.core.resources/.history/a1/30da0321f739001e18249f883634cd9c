@@ -1,0 +1,81 @@
+package seção07;
+
+import java.util.Scanner;
+
+public class TesteBanco {
+  public static void main(String[] args) throws InterruptedException {
+	
+	  Scanner sc = new Scanner(System.in);
+	
+	  int op;
+	do {
+       
+		  System.out.println("----- * Menu * > Conta Bancaria----- ");
+		  System.out.println(" 1- Conta Bancaria                   ");
+		  System.out.println(" 2- Conta Poupanca                   ");
+		  System.out.println(" 3- Conta Especial                   ");
+		  System.out.println("-------------------------------------");
+		  
+		  op = sc.nextInt();
+		  
+		switch (op) {
+		case 1:
+			  System.out.println("----------------------------------");
+			  
+			  System.out.print("Digite o nome do cliente:");
+			  String cliente = sc.next();
+			  
+			  System.out.print("Digite um numero da conta:");
+              int numero_conta = sc.nextInt();
+              
+              System.out.print("Digite o saldo da conta:");
+              float saldo = sc.nextFloat();
+              
+              System.out.print("Digite o valoe que seja retirar:");
+              float valor = sc.nextFloat();
+              
+              
+              ContaBancaria conta = new ContaBancaria(cliente,numero_conta,saldo,valor);		  
+			  System.out.println("-----------------------------------");
+			  
+			  System.out.println(conta);
+              conta.sacar(saldo);
+			  conta.depositar(saldo);
+			  Thread.sleep(10000);
+			  System.out.println();
+			break;
+		case 2:
+			
+			 System.out.println("----------------------------------");
+			  
+			  System.out.print("Digite o nome do cliente:");
+			  cliente = sc.next();
+			  
+			  System.out.print("Digite um numero da conta:");
+              numero_conta = sc.nextInt();
+             
+             System.out.print("Digite o saldo da conta:");
+              saldo = sc.nextFloat();
+             
+             System.out.print("Digite o valoe que seja retirar:");
+              valor = sc.nextFloat();
+             
+             System.out.print("Informe o dia de rendimento");
+             int dia_redimento = sc.nextInt();
+             
+             ContaPoupanca poup = new ContaPoupanca(cliente,numero_conta,saldo,valor,dia_redimento);		  
+			 System.out.println("-----------------------------------");
+             
+			 System.out.println(poup);
+			 poup.calcularNovoSaldo(saldo, dia_redimento);
+			 Thread.sleep(10000); 
+			break;
+
+		default:
+			break;
+		}
+		  
+	} while (op!=3);
+
+  }
+}

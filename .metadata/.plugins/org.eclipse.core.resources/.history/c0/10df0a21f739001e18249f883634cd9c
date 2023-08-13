@@ -1,0 +1,8 @@
+package seção07;
+
+public interface Conta {
+  
+	void sacar(double valor);
+	void depositar(double valor);
+
+}

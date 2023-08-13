@@ -1,0 +1,24 @@
+package seção07;
+
+public class TestaTime {
+
+	public static void main(String[] args) {
+		
+		 /* Cria um vetor de livros. */
+	    Futebol[] futebol= new Futebol[4];
+	    futebol[0] = new Futebol("Santos", "Cidade de Santos");
+	    futebol[1] = new Futebol("São Paulo", "Cidade de São Paulo");
+	    futebol[2] = new Futebol("Internacional", "Cidade de Porto Alegre");
+	    futebol[3] = new Futebol("Flamengo", " Cidade de Rio de Janeiro");
+
+	    ordenar o = new ordenar();
+	    o.ordena(futebol);
+	    
+	    for(int cont = 0; cont < futebol.length; cont++) {
+	        System.out.println("Autor: " + futebol[cont].getNome());
+	        System.out.println("Livro: " + futebol[cont].getTime());
+	        System.out.println("\n--------\n");
+	      }
+	    
+	}
+}

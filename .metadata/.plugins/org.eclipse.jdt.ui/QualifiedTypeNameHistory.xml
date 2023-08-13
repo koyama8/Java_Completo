@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.cod3r.calc.modelo.MemoriaObservador"/>
+<fullyQualifiedTypeName name="br.com.cod3r.calc.visao.Display"/>
+<fullyQualifiedTypeName name="br.com.cod3r.calc.visao.Teclado"/>
+<fullyQualifiedTypeName name="padroes.observer.Namorada"/>
+<fullyQualifiedTypeName name="padroes.observer.Porteiro"/>
+<fullyQualifiedTypeName name="oo.polimorfismo.Sorvete"/>
+<fullyQualifiedTypeName name="classe.desafio.Pessoa"/>
+</qualifiedTypeNameHistroy>

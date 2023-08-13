@@ -1,0 +1,69 @@
+package seção04;
+
+import java.util.Scanner;
+
+public class Exercicio05 {
+ public static void main(String[] args) {
+   
+	 Scanner entrada = new Scanner(System.in);
+	 
+	 int opcao = entrada.nextInt();
+	 
+	 while(opcao !=0) {
+		 
+		 System.out.println("============");
+		 System.out.println("Soma");
+		 System.out.println("Subtracao");
+		 System.out.println("Divisao");
+		 System.out.println("==========");
+		 
+		 int op = entrada.nextInt();
+
+		 
+		 switch (op) {
+		case 1:
+			System.out.println("Informe um numero:");
+			int num = entrada.nextInt();
+			
+			System.out.println("Informe o segundo numero:");
+			int num1 = entrada.nextInt();
+			
+			int resultado = num + num1;
+			System.out.println(resultado);
+			break;
+
+		case 2:
+			
+			System.out.println("Informe um numero:");
+			 num = entrada.nextInt();
+			
+			System.out.println("Informe o segundo numero:");
+			 num1 = entrada.nextInt();
+			
+			 resultado = num - num1;
+			System.out.println(resultado);
+			break;
+         
+		 case 3:
+			
+			System.out.println("Informe um numero:");
+			 num = entrada.nextInt();
+			
+			System.out.println("Informe o segundo numero:");
+			 num1 = entrada.nextInt();
+			
+			 resultado = num / num1;
+			System.out.println(resultado);
+			break;
+			
+		default:
+			break;
+		}
+		 
+		 System.out.println();
+		 System.out.println("Informe outra opcao");
+		 opcao = entrada.nextInt();
+		 
+	 }
+ }
+}

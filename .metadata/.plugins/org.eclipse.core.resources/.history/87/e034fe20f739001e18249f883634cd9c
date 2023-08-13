@@ -1,0 +1,19 @@
+package seção07;
+
+public class Exe02 {
+   public static void main(String[] args) {
+
+	   
+	   
+	   Ferrari c1 = new Ferrari(5);
+	   
+	   System.out.println(c1);
+	   
+	   c1.ligarTudo();
+	   System.out.println(c1);
+	   
+	   c1.desligarTurbo();
+	   System.out.println(c1);
+	   
+ }
+}

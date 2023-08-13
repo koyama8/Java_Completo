@@ -1,0 +1,35 @@
+package seção06;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Exercício02 {
+  public static void main(String[] args) {
+
+	  Scanner sc = new Scanner(System.in);
+	  
+	  System.out.print("Informe a linha: ");
+	  int linha = sc.nextInt();
+	  
+	  System.out.print("Informe a coluna: ");
+	  int coluna = sc.nextInt();
+	  
+	  int [][] matriz = new int[linha][coluna];
+	  for(int i=0;i<matriz.length;i++) {
+		  for(int j=0; j<matriz[i].length;j++) {
+
+               System.out.println("Digite um numero");
+               matriz[i][j] = sc.nextInt();
+			  
+		  }
+	  }
+	  
+	  System.out.println();
+      for (int[] notas : matriz) {
+		System.out.println(Arrays.toString(notas));
+	}
+      
+      
+ 
+ }
+}

@@ -1,0 +1,42 @@
+package classes_metodos;
+
+ /**
+ * @author Matheus
+ */
+public class Apolice {
+  
+	String nomeSegurado;
+	int idade;
+	double valor_premio;
+	
+	public Apolice(String nomeSegurado, int idade, double valor_premio) {
+	  
+		this.nomeSegurado = nomeSegurado;
+		this.idade = idade;
+		this.valor_premio = valor_premio;
+	}
+	
+	public void imprimir() {
+		
+		System.out.println(nomeSegurado);
+		System.out.println(idade);
+		System.out.println(valor_premio);
+	}
+	
+	public void calcularPremioApolice(int idade, double valor_premio) {
+		
+		
+		if(idade>=18 || idade <=25) {
+			
+			System.out.println(valor_premio += (valor_premio * 20)/100);
+		}else if(idade>25 || idade <=26) {
+			System.out.println(valor_premio += (valor_premio * 15)/100);		
+		}else if(idade > 36) {
+			System.out.println(valor_premio += (valor_premio * 10)/100);
+			
+		}
+	}
+	
+	
+	
+}

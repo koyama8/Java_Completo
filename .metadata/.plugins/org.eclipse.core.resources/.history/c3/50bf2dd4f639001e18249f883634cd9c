@@ -1,0 +1,28 @@
+package seção04;
+
+import java.util.Scanner;
+
+/**
+Faça um programa que receba dois números e imprima o maior deles.
+
+*/
+public class Exercicio01 {
+ public static void main(String[] args) {
+	
+	 Scanner entrada = new Scanner(System.in);
+	 
+	 System.out.println("Digite um numero");
+	 int num = entrada.nextInt();
+	 
+	 System.out.println("Digite um segundo numero");
+	 int num1 = entrada.nextInt();
+	 
+	 System.out.println("O maior numero");
+	 if(num > num1) {
+		 System.out.println(num);
+	 }else if(num < num1) {
+		 System.out.println(num1);
+	 }
+	 
+ }
+}

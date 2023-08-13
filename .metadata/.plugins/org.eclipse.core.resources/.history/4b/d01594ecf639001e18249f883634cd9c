@@ -1,0 +1,44 @@
+package seção05;
+/**
+Escreva uma classe cujos objetos representam algunos matriculados
+em uma disciplina. Cada objeto dessa classe deve guardar os seguintes
+dados desse aluno: matrícula, nome, notas de prova e 1 nota de trabalho;
+Escreva os seguintes metodos dessa classe.
+
+media: Calcula a média final do aluno (cada prova tem peso 2,5 e trabalho
+tem peso 2
+final: calcula quanto o aluno precisa para a prova final (retorna
+zero se ele não for para a final)
+
+*/
+import java.util.Scanner;
+
+public class Exercicio01 {
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.print("Digite o nome do aluno:");
+	String nome = sc.next();
+	
+	System.out.print("Digite a sua matricula:");
+	String matricula = sc.next();
+	
+	System.out.print("Digite a nota da prova:");
+	double nota_prova = sc.nextDouble();
+	
+	System.out.print("Digite a nota de trabalho:");
+	double nota_trabalho = sc.nextDouble();
+	
+	
+	Aluno aluno = new Aluno(nome,matricula,nota_prova,nota_trabalho);
+	
+	System.out.println("Nome: " + aluno.getNome(nome));
+	System.out.println("Matricula: " + aluno.getMatricula(matricula));
+	System.out.println("Nota da prova: " + aluno.getNota_prova(nota_prova));
+	System.out.println("Nota do trabalho: " + aluno.getNota_trabalho(nota_trabalho));
+	
+	 aluno.media(nota_prova,nota_trabalho);
+	 System.out.println(aluno.mediaFinal());
+ }
+}

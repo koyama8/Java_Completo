@@ -1,0 +1,23 @@
+package projeto;
+
+public class Academia {
+    
+	private String nome="Academia Central - Fitness";
+	private String rua="Rua Carlos de Almeida";
+	private int numero=580;
+	private int cep=12345;
+	private String email="Fiteness@central.gmail.com";
+	private String descricao="Para o público que deseja manter o corpo em dia"+ "\n"+
+			 "para aqueles que desejam estabelecer metas futuras."
+			;
+	
+	public String toString() {
+		
+		return "Nome:" + nome + "\n"+
+			   "Rua:" + rua +"\n"+
+			   "Numero:"+numero+"\n"+
+			   "Cep:"+cep+"\n"+
+			   "Email:"+email+"\n"+
+			   "Descricao:"+descricao;
+	}
+}

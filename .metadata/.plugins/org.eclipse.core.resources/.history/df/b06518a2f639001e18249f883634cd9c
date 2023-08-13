@@ -1,0 +1,18 @@
+package seção03;
+/**
+ * 
+ * @author Matheus
+ *Faça um Programa que recebe o quanto você ganha por hora e o 
+ *número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+ */
+public class Exercicio04 {
+  public static void main(String[] args) {
+    
+	  double qtd_hora = 15;
+	  double horas_trabalha = 5;
+	
+	  double resultado = qtd_hora * horas_trabalha;
+	 System.out.println("A quantida de horas " + qtd_hora + ", Horas trabalhadas " + horas_trabalha +
+			 ", Salario Bruto R$ " + resultado);  
+  }
+}
