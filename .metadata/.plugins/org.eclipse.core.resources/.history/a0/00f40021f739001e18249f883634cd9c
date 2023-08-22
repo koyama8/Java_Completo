@@ -1,6 +1,0 @@
-package seção07;
-
-public interface comparavel {
-
-	public abstract int comparar(Object o);
-}

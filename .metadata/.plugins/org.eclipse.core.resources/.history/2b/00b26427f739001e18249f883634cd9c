@@ -1,6 +1,0 @@
-package orientacao_objetos;
-
-public interface comparavel {
-
-	public abstract int comparar(Object o);
-}
