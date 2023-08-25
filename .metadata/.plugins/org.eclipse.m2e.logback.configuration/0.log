@@ -8763,3 +8763,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration ExerciciosSbApplica
 2023-08-23 18:10:05,410 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\koyam\Downloads\exercicios-sb-projeto\exercicios-sb-projeto\src\test\resources
 2023-08-24 16:48:53,818 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2023-08-24 16:51:31,302 [Worker-3: Launching ExerciciosSbProjetoApplication (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact mysql:mysql-connector-java:jar:8.0.31 has been relocated to com.mysql:mysql-connector-j:jar:8.0.31
+2023-08-24 22:33:51,285 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
